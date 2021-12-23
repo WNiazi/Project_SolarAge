@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Solar Age </title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Solar Age </h1>
+      <p class="lead">Find out how old you really are:</p>
+    </div>
+  </div>
+<!-- this is for the planets const planets = $("#planets").val(); -->
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Select the Planet</label>
+    <select class="form-control" id="planets">
+      <option value = "1">Mercury </option>
+      <option value = "2">Venus</option>
+      <option value = "3">Mars</option>
+      <option value = "4">Jupiter</option>
+    </select>
+  </div>
+  <!-- //const age = $("#age").val(); -->
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Life Expectancy </label>
+      <select class="form-control" id="age">
+        <option value = "1">50-60 yrs </option>
+        <option value = "2">60-70yrs</option>
+        <option value = "3">80-90yrs</option>
+      </select>
+    </div>
+
+<!-- <form>//const activity = $("#activity").val() -->
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select your activity level</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option value = "1">Yoga and running </option>
+        <option value = "2">Some Yoga</option>
+        <option value = "3">What is Yoga?</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select your lifestyle: </label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option value = "1">Healthy</option>
+        <option value = "2">So So </option>
+        <option value = "3">Does Burgers and fries count? </option>
+      </select>
+    </div>
+  <!-- This is for the birthday  --> 
+  <form action="/action_page.php">
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    <input type="submit">
+  </form>
+  <!-- above is for the birthday  -->
+</body>
+</html>

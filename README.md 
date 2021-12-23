@@ -1,0 +1,58 @@
+# Project_Solar_Age 
+
+#### By Wajma Niazi
+
+#### Creating application which checks for age on various planets. 
+
+## Technologies Used
+
+* VS Code
+* CSS 
+* HTML 
+* jQuery
+* Bootstrap
+* Webpack /NPM 
+
+
+## Description
+
+__From User's Inputs getting birthday, life expectancy and calculating various solar ages on various planets, testing throughout the project. 
+
+__Please go to ***>>> list git hub page to view project.  
+
+## Setup/Installation Requirements
+* _Clone Repository to your desktop  
+* _Run npm run install 
+## Testing
+``` 
+Describe: Creating a Object property and using it against the User's inputs. 
+```
+Test:  It will collect input from the User 
+Code:   
+Expected Output:  
+```
+Test:  It will convert it to days to various planets (Mercury: 0.24, Venus: 0.62, Mars: 1.88, Jupiter: 11.86)  
+Code:   
+Expected Output:  
+```
+Test: It will compare (subtract/add) to planets.  
+Code:   
+Expected Output:  
+```
+```
+Test: It will add/subtract due to various attributes  
+Code:   
+Expected Output:  
+```
+Test: It will check it on life expectancy (inputed by the User) and adjust statements regarding life left or amount of life expired. 
+Code:   
+Expected Output:  
+```
+## Known Bugs
+* _Any known issues
+
+## License
+
+_MIT
+
+Copyright (c) 2021 Wajma Niazi
