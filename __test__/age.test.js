@@ -5,6 +5,6 @@ describe('Age', () => {
     solarAge = new Age ();
     });
     test('it should correctly bring in dob', () => { 
-      expect (solarAge.dob).not.toEqual(11/4/1978); 
+      expect (solarAge.dob).toEqual(11/4/1978); 
     });
 });
