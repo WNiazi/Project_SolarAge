@@ -10,50 +10,62 @@
       <p class="lead">Find out how old you really are:</p>
     </div>
   </div>
-<!-- this is for the planets const planets = $("#planets").val(); -->
-<form action="/action_page.php">
+<form id ="formOne">
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Select the Planet</label>
+    <label for="FormControl">Select the Planet</label>
     <select class="form-control" id="planets">
-      <option value = "1">Mercury </option>
-      <option value = "2">Venus</option>
-      <option value = "3">Mars</option>
-      <option value = "4">Jupiter</option>
+      <option value = "Mercury">Mercury </option>
+      <option value = "Venus">Venus</option>
+      <option value = "Mars">Mars</option>
+      <option value = "Jupiter">Jupiter</option>
     </select>
   </div>
-  <!-- //const age = $("#age").val(); -->
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Life Expectancy </label>
-      <select class="form-control" id="age">
-        <option value = "1">50-60 yrs </option>
-        <option value = "2">60-70yrs</option>
-        <option value = "3">80-90yrs</option>
-      </select>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">How long do you expect to live?</label>
     </div>
+    <select class="custom-select" id="life_expenctancy">
+      <option value="60">60 years</option>
+      <option value="70">70 years</option>
+      <option value="80">80 years</option>
+    </select>
+  </div>
+ 
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Activity Level</label>
+    </div>
+    <select class="custom-select" id="activity">
+      <option value="1">Yoga</option>
+      <option value="2">Some Yoga</option>
+      <option value="3">Yoga?</option>
+    </select>
+  </div>
+ 
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="inputGroupSelect01">Overall LifeStyle</label>
+    </div>
+    <select class="custom-select" id="lifestyle">
+      <option value="1">Healthy</option>
+      <option value="2">So So</option>
+      <option value="3">Healthy?</option>
+    </select>
+  </div>
 
-<!-- <form>//const activity = $("#activity").val() -->
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Select your activity level</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option value = "1">Yoga and running </option>
-        <option value = "2">Some Yoga</option>
-        <option value = "3">What is Yoga?</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Select your lifestyle: </label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option value = "1">Healthy</option>
-        <option value = "2">So So </option>
-        <option value = "3">Does Burgers and fries count? </option>
-      </select>
-    </div>
-  <!-- This is for the birthday  --> 
-  <form action="/action_page.php">
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday">
-    <input type="submit">
-  </form>
-  <!-- above is for the birthday  -->
+  <div id ="birth_date_input"> Birth Date: 
+    <input type ="date" id ="birth_date">
+  </div> 
+
+  <div id="btnsubmit">
+    <button type="submit" class="btn btn-primary">How old are you?</button>
+  </div>
+</form>
+
+  <div id = "results"> 
+    <p>You age is <span id="birthYear"></span></p>
+    <p>If you were in <span id = "planetpicked"></span>. You would be <span id="adjusted age"></span>
+    <p>Since your lifestyle is considered "<span id ="lifestylestyle"></span> Your age is <span id="adjustedagelifestyle"></span></p>
+  </div>
 </body>
 </html>
