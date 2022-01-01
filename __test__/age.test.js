@@ -11,19 +11,19 @@ describe('Age', () => {
     test ('it should give the age of user with variation depending on lifestyle/activity', () => {
       expect (solarAge.calculateBirthday()).toBe(53); 
     }); 
-    test ('it should subtract from life expectancy', () => {
-      expect (solarAge.calLifeExpectancyEarth()).toBeGreaterThan(20); 
-    }); 
-    test('it should provide the age in other planets/Mercury', () => { 
-      expect (solarAge.calAgeMercury()).toBe(179); 
-      expect (solarAge.calAgeVenus()).toBe(69); 
-      expect (solarAge.calAgeMars()).toBe(23); 
-      expect (solarAge.calAgeJupiter()).toBe(4); 
-    }); 
-    test('it should provide lifeExpectancy varying per planet', () => { 
-      expect (solarAge.calLifeExpMercury()).toContain('dead'); 
-      expect (solarAge.calLifeExpVenus()).toContain('live');
-      expect (solarAge.calLifeExpMars()).toContain('live');
-      expect (solarAge.calLifeExpJupiter()).toContain('live');
-    });
+    // test ('it should subtract from life expectancy', () => {
+    //   expect (solarAge.calLifeExpectancyEarth()).toBeGreaterThan(20); 
+    // }); 
+    // test('it should provide the age in other planets/Mercury', () => { 
+    //   expect (solarAge.calAgeMercury()).toBe(179); 
+    //   expect (solarAge.calAgeVenus()).toBe(69); 
+    //   expect (solarAge.calAgeMars()).toBe(23); 
+    //   expect (solarAge.calAgeJupiter()).toBe(4); 
+    // }); 
+    // test('it should provide lifeExpectancy varying per planet', () => { 
+    //   expect (solarAge.calLifeExpMercury()).toContain('dead'); 
+    //   expect (solarAge.calLifeExpVenus()).toContain('live');
+    //   expect (solarAge.calLifeExpMars()).toContain('live');
+    //   expect (solarAge.calLifeExpJupiter()).toContain('live');
+    // });
 });
