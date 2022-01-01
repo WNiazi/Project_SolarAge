@@ -22,7 +22,7 @@ describe('Age', () => {
     }); 
     test('it should provide lifeExpectancy varying per planet', () => { 
       expect (solarAge.calLifeExpMercury()).toContain('dead'); 
-      expect (solarAge.calLifeExpVenus()).toContain('live');
+      expect (solarAge.calLifeExpVenus()).toContain('dead');
       expect (solarAge.calLifeExpMars()).toContain('live');
       expect (solarAge.calLifeExpJupiter()).toContain('live');
     });
