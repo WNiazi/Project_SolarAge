@@ -20,10 +20,10 @@ describe('Age', () => {
       expect (solarAge.calAgeMars()).toBeGreaterThan(23); 
       expect (solarAge.calAgeJupiter()).toBe(4); 
     }); 
-    // test('it should provide lifeExpectancy varying per planet', () => { 
-    //   expect (solarAge.calLifeExpMercury()).toContain('dead'); 
-    //   expect (solarAge.calLifeExpVenus()).toContain('live');
-    //   expect (solarAge.calLifeExpMars()).toContain('live');
-    //   expect (solarAge.calLifeExpJupiter()).toContain('live');
-    // });
+    test('it should provide lifeExpectancy varying per planet', () => { 
+      expect (solarAge.calLifeExpMercury()).toContain('dead'); 
+      expect (solarAge.calLifeExpVenus()).toContain('live');
+      expect (solarAge.calLifeExpMars()).toContain('live');
+      expect (solarAge.calLifeExpJupiter()).toContain('live');
+    });
 });
