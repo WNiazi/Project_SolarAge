@@ -16,8 +16,8 @@ describe('Age', () => {
     }); 
     test('it should provide the age in other planets/Mercury', () => { 
       expect (solarAge.calAgeMercury()).toBeGreaterThan(179); 
-      expect (solarAge.calAgeVenus()).toBe(69); 
-      expect (solarAge.calAgeMars()).toBe(23); 
+      expect (solarAge.calAgeVenus()).toBeGreaterThan(69); 
+      expect (solarAge.calAgeMars()).toBeGreaterThan(23); 
       expect (solarAge.calAgeJupiter()).toBe(4); 
     }); 
     // test('it should provide lifeExpectancy varying per planet', () => { 
