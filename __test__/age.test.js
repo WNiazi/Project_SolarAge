@@ -12,7 +12,7 @@ describe('Age', () => {
       expect (solarAge.calculateBirthday()).toBe(53); 
     }); 
     test ('it should subtract from life expectancy', () => {
-      expect (solarAge.calLifeExpectancyEarth()).toBeLessThan(20); 
+      expect (solarAge.calLifeExpectancyEarth()).toBe(27); 
     }); 
     // test('it should provide the age in other planets/Mercury', () => { 
     //   expect (solarAge.calAgeMercury()).toBe(179); 

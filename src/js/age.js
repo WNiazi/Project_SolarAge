@@ -3,7 +3,7 @@ export default class Age {
     this.birthday = birthday; 
     this.today = today;  
     this.lifeExpectancy = 80;  
-    this.birthYear = 43;
+    this.birthYear = 53;
     this.activity = 2;  
     this.lifestyle = 3; 
     this.mercuryAge = this.calAgeMercury ();
