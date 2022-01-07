@@ -11,18 +11,21 @@
 * HTML 
 * jQuery
 * Bootstrap
-* Webpack /NPM 
+* Webpack/NPM 
 
 
 ## Description
 
 __From User's Inputs getting birthday, life expectancy and calculating various solar ages on various planets, testing throughout the project. 
 
-__Please go to ***>>> list git hub page to view project.  
+__Please go to https://github.com/WNiazi/Project_SolarAge list git hub page to view project.  
 
 ## Setup/Installation Requirements
 * _Clone Repository to your desktop  
-* _Run npm run install 
+* _Put "npm install" in terminal to install packages, then "npm run build"
+* _Put "npm start" in terminal
+*_"npm test" to check TDD/testing  
+
 ## Testing
 ``` 
 Describe: Creating a Object property and using it against the User's inputs.  
@@ -39,16 +42,9 @@ Test: It will calculate age in other planets based on Earth age and given factor
 Code:   EarthAgeYears, divided by factor provided (0.24 for Mercury); let result =Math.round(result); 
 Expected Output:  179 
 ```
-Test: It will check it on life expectancy (inputed by the User) and adjust statements regarding life left or amount of life expired. 
-Code:   
-Expected Output:  
-```
-Test:  It will collect input from the User 
-Code:   
-Expected Output: 
-```
+
 ## Known Bugs
-* _Any known issues
+* _UI logic is not available. Ready/Submit function are not working appropriately 
 
 ## License
 

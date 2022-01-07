@@ -14,25 +14,43 @@ module.exports = {
   plugins: [ 
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'jsDevEnvironmentTemplate',
+      title: 'Project_Solar_Age',
       template: './src/index.html',
       inject: 'body'
     })
   ],
-  module: { 
+  module: {
     rules: [
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader'
+          ]
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: "eslint-loader"
+        },
       {
-        test: /\.css$/,
+        test: /\.(gif|png|jpe?g)$/,
         use: [
-          'style-loader',
-          'css-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images/'
+            }
+          }
+        ]
+      },   
+      {
+        test:/\.html$/,
+        use: [
+          'html-loader'
         ]
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader"
-      }
     ]
-  }
+  },
 };

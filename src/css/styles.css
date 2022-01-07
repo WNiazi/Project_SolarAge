@@ -1,0 +1,35 @@
+.image { 
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image::before {    
+  content: ''; 
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-image: url("../img/solar.jpg");
+  background-size: cover;
+  /* repeat: no repeat;   */
+  opacity: 0.75;
+}
+body { 
+  position: relative ; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;
+}
+#formOne{ 
+  position: relative; 
+  text-align: center;
+  padding-block: 20erm;
+}
+#results { 
+  text-align: center; 
+  display: none;
+}
